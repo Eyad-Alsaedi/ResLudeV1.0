@@ -1,0 +1,44 @@
+﻿@model List<ExpertsGulfPortal.Models.Entities.Arbitrators>
+
+<h1 dir="rtl">جميع الطلبات</h1>
+
+<table class="table" dir="rtl">
+    <thead>
+        <tr>
+            <th>الجنسية</th>
+            <th>اللغة المفضلة</th>
+            <th>الجنس</th>
+            <th>الجهة</th>
+            <th>الدولة</th>
+            <th>المدينة</th>
+            <th>الدرجة العلمية</th>
+            <th>التخصص العام</th>
+            <th>التخصص الدقيق</th>
+            <th>موضوع رسالة الماجستير</th>
+            <th>موضوع رسالة الدكتوراه</th>
+            <th>الإجراءات</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var arbitrator in Model)
+        {
+            <tr>
+                
+                <td>@arbitrator.Nationality</td>
+                <td>@arbitrator.PreferredLanguage</td>
+                <td>@arbitrator.Gender</td>
+                <td>@arbitrator.Entities</td>
+                <td>@arbitrator.Country</td>
+                <td>@arbitrator.City</td>
+                <td>@arbitrator.AcademicDegree</td>
+                <td>@arbitrator.GeneralSpecialization</td>
+                <td>@arbitrator.SpecificSpecialization</td>
+                <td>@arbitrator.MastersThesisTitle</td>
+                <td>@arbitrator.DoctoralThesisTitle</td>
+                <td>
+                    <a href="@Url.Action("View", "Arbitrators", new { id = arbitrator.Id })">عرض</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

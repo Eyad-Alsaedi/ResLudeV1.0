@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <form asp-action="Index" method="post">
+        <div>
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name" />
+        </div>
+        <div>
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" name="Email" />
+        </div>
+        <div>
+            <label for="Message">Message:</label>
+            <textarea id="Message" name="Message"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+</div>
