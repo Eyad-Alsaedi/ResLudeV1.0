@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eyade\\source\\repos\\ExpertsGulfPortal\\ExpertsGulfPortal\\ExpertsGulfPortal.csproj": {}
+    "C:\\Users\\eyade\\Source\\Repos\\ResLudeV1.1\\ExpertsGulfPortal\\ExpertsGulfPortal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eyade\\source\\repos\\ExpertsGulfPortal\\ExpertsGulfPortal\\ExpertsGulfPortal.csproj": {
+    "C:\\Users\\eyade\\Source\\Repos\\ResLudeV1.1\\ExpertsGulfPortal\\ExpertsGulfPortal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eyade\\source\\repos\\ExpertsGulfPortal\\ExpertsGulfPortal\\ExpertsGulfPortal.csproj",
+        "projectUniqueName": "C:\\Users\\eyade\\Source\\Repos\\ResLudeV1.1\\ExpertsGulfPortal\\ExpertsGulfPortal.csproj",
         "projectName": "ExpertsGulfPortal",
-        "projectPath": "C:\\Users\\eyade\\source\\repos\\ExpertsGulfPortal\\ExpertsGulfPortal\\ExpertsGulfPortal.csproj",
+        "projectPath": "C:\\Users\\eyade\\Source\\Repos\\ResLudeV1.1\\ExpertsGulfPortal\\ExpertsGulfPortal.csproj",
         "packagesPath": "C:\\Users\\eyade\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eyade\\source\\repos\\ExpertsGulfPortal\\ExpertsGulfPortal\\obj\\",
+        "outputPath": "C:\\Users\\eyade\\Source\\Repos\\ResLudeV1.1\\ExpertsGulfPortal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\eyade\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -46,6 +46,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.8.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.10, )"

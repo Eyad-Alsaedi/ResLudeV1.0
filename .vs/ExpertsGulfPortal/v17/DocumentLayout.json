@@ -1,10 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\eyade\\source\\repos\\ExpertsGulfPortal\\",
+  "WorkspaceRootPath": "C:\\Users\\eyade\\source\\repos\\ResLudeV1.1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{438D2D9F-CA6A-479E-B791-641F5A9156C8}|ExpertsGulfPortal\\ExpertsGulfPortal.csproj|c:\\users\\eyade\\source\\repos\\expertsgulfportal\\expertsgulfportal\\views\\arbitrators\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{438D2D9F-CA6A-479E-B791-641F5A9156C8}|ExpertsGulfPortal\\ExpertsGulfPortal.csproj|solutionrelative:expertsgulfportal\\views\\arbitrators\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{438D2D9F-CA6A-479E-B791-641F5A9156C8}|ExpertsGulfPortal\\ExpertsGulfPortal.csproj|c:\\users\\eyade\\source\\repos\\resludev1.1\\expertsgulfportal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{438D2D9F-CA6A-479E-B791-641F5A9156C8}|ExpertsGulfPortal\\ExpertsGulfPortal.csproj|solutionrelative:expertsgulfportal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438D2D9F-CA6A-479E-B791-641F5A9156C8}|ExpertsGulfPortal\\ExpertsGulfPortal.csproj|c:\\users\\eyade\\source\\repos\\resludev1.1\\expertsgulfportal\\expertsgulfportal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{438D2D9F-CA6A-479E-B791-641F5A9156C8}|ExpertsGulfPortal\\ExpertsGulfPortal.csproj|solutionrelative:expertsgulfportal\\expertsgulfportal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,24 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Add.cshtml",
-              "DocumentMoniker": "C:\\Users\\eyade\\source\\repos\\ExpertsGulfPortal\\ExpertsGulfPortal\\Views\\Arbitrators\\Add.cshtml",
-              "RelativeDocumentMoniker": "ExpertsGulfPortal\\Views\\Arbitrators\\Add.cshtml",
-              "ToolTip": "C:\\Users\\eyade\\source\\repos\\ExpertsGulfPortal\\ExpertsGulfPortal\\Views\\Arbitrators\\Add.cshtml",
-              "RelativeToolTip": "ExpertsGulfPortal\\Views\\Arbitrators\\Add.cshtml",
-              "ViewState": "AgIAAM8AAAAAAAAAAAAAANEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-06T08:53:02.634Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExpertsGulfPortal",
+              "DocumentMoniker": "C:\\Users\\eyade\\Source\\Repos\\ResLudeV1.1\\ExpertsGulfPortal\\ExpertsGulfPortal.csproj",
+              "RelativeDocumentMoniker": "ExpertsGulfPortal\\ExpertsGulfPortal.csproj",
+              "ToolTip": "C:\\Users\\eyade\\Source\\Repos\\ResLudeV1.1\\ExpertsGulfPortal\\ExpertsGulfPortal.csproj",
+              "RelativeToolTip": "ExpertsGulfPortal\\ExpertsGulfPortal.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-10T11:29:50.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\eyade\\source\\repos\\ResLudeV1.1\\ExpertsGulfPortal\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ExpertsGulfPortal\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\eyade\\source\\repos\\ResLudeV1.1\\ExpertsGulfPortal\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ExpertsGulfPortal\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-07T09:25:23.921Z",
+              "EditorCaption": ""
             }
           ]
         }

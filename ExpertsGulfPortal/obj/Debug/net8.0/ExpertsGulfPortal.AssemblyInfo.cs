@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ExpertsGulfPortal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e77070f821da5a31c81e4a118275e1521514a58")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bced10ba14fcae945da7bf8bb2122b2114f76196")]
 [assembly: System.Reflection.AssemblyProductAttribute("ExpertsGulfPortal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ExpertsGulfPortal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
