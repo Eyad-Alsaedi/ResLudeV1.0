@@ -36,24 +36,37 @@ namespace ExpertsGulfPortal.Controllers
 
             var arbitrator = new Arbitrators
             {
+                FirstName = viewModel.FirstName, // First Name
+                LastName = viewModel.LastName, // Last Name
+                ConsultationType = viewModel.ConsultationType, // نوع الاستشارة
                 Nationality = viewModel.Nationality, // الجنسية
-                PreferredLanguage = viewModel.PreferredLanguage, // اللغه المفضلة
+                PreferredLanguage = viewModel.PreferredLanguage, // اللغة المفضلة
                 Gender = viewModel.Gender, // الجنس
                 Entities = viewModel.Entities, // الجهات
                 Country = viewModel.Country, // الدولة
                 City = viewModel.City, // المدينة
-                AcademicDegree = viewModel.AcademicDegree, // الدرجة العلمية الحاصل عليها
+                AcademicDegree = viewModel.AcademicDegree, // الدرجة العلمية
                 GeneralSpecialization = viewModel.GeneralSpecialization, // التخصص العام
-                SpecificSpecialization = viewModel.SpecificSpecialization, // التخصص الدقيق
+                SpecificSpecialization1 = viewModel.SpecificSpecialization1, // التخصص الدقيق 1
+                SpecificSpecialization2 = viewModel.SpecificSpecialization2, // التخصص الدقيق 2
                 MastersThesisTitle = viewModel.MastersThesisTitle, // موضوع رسالة الماجستير
-                DoctoralThesisTitle = viewModel.DoctoralThesisTitle // موضوع رسالة الدكتوراه
+                DoctoralThesisTitle = viewModel.DoctoralThesisTitle, // موضوع رسالة الدكتوراه
+                ResidencePlace = viewModel.ResidencePlace, // مكان الإقامة
+                WorkPlace = viewModel.WorkPlace, // مكان العمل
+                LaborMarketSpecialization = viewModel.LaborMarketSpecialization, // تخصصات سوق العمل
+                ScientificAssociation = viewModel.ScientificAssociation, // الجمعية العلمية
+                ProfessionalCertificate = viewModel.ProfessionalCertificate, // شهادة مزاولة المهنة
+                Qualification = viewModel.Qualification // المؤهل
             };
 
             await dbContext.Arbitrators.AddAsync(arbitrator);
             await dbContext.SaveChangesAsync();
 
-            string subject = "ResLude - طلب محكم";
-            string body = $"طلب محكم جديد:\n\n" +
+            string subject = "ResLude - إضافة محكم جديد";
+            string body = $"إضافة محكم جديد:\n\n" +
+                          $"نوع الاستشارة: {arbitrator.ConsultationType}\n" +
+                          $"الاسم الأول: {arbitrator.FirstName}\n" +
+                          $"الاسم الأخير: {arbitrator.LastName}\n" +
                           $"الجنسية: {arbitrator.Nationality}\n" +
                           $"اللغة المفضلة: {arbitrator.PreferredLanguage}\n" +
                           $"الجنس: {arbitrator.Gender}\n" +
@@ -62,15 +75,22 @@ namespace ExpertsGulfPortal.Controllers
                           $"المدينة: {arbitrator.City}\n" +
                           $"الدرجة العلمية: {arbitrator.AcademicDegree}\n" +
                           $"التخصص العام: {arbitrator.GeneralSpecialization}\n" +
-                          $"التخصص الدقيق: {arbitrator.SpecificSpecialization}\n" +
+                          $"التخصص الدقيق 1: {arbitrator.SpecificSpecialization1}\n" +
+                          $"التخصص الدقيق 2: {arbitrator.SpecificSpecialization2}\n" +
                           $"عنوان رسالة الماجستير: {arbitrator.MastersThesisTitle}\n" +
-                          $"عنوان رسالة الدكتوراه: {arbitrator.DoctoralThesisTitle}";
-
+                          $"عنوان رسالة الدكتوراه: {arbitrator.DoctoralThesisTitle}\n" +
+                          $"مكان الإقامة: {arbitrator.ResidencePlace}\n" +
+                          $"مكان العمل: {arbitrator.WorkPlace}\n" +
+                          $"تخصصات سوق العمل: {arbitrator.LaborMarketSpecialization}\n" +
+                          $"الجمعية العلمية: {arbitrator.ScientificAssociation}\n" +
+                          $"شهادة مزاولة المهنة: {arbitrator.ProfessionalCertificate}\n" +
+                          $"المؤهل: {arbitrator.Qualification}";
 
             await _emailService.SendEmailAsync(subject, body);
 
             return RedirectToAction("List", "Arbitrators");
         }
+
 
         [HttpGet]
         public async Task<IActionResult> List()

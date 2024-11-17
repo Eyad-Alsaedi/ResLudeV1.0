@@ -1,44 +1,101 @@
 ﻿@model List<ExpertsGulfPortal.Models.Entities.Arbitrators>
 
-<h1 dir="rtl">جميع الطلبات</h1>
+<h1 dir="rtl">جميع المحكمين</h1>
 
-<table class="table" dir="rtl">
-    <thead>
-        <tr>
-            <th>الجنسية</th>
-            <th>اللغة المفضلة</th>
-            <th>الجنس</th>
-            <th>الجهة</th>
-            <th>الدولة</th>
-            <th>المدينة</th>
-            <th>الدرجة العلمية</th>
-            <th>التخصص العام</th>
-            <th>التخصص الدقيق</th>
-            <th>موضوع رسالة الماجستير</th>
-            <th>موضوع رسالة الدكتوراه</th>
-            <th>الإجراءات</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var arbitrator in Model)
-        {
-            <tr>
-                
-                <td>@arbitrator.Nationality</td>
-                <td>@arbitrator.PreferredLanguage</td>
-                <td>@arbitrator.Gender</td>
-                <td>@arbitrator.Entities</td>
-                <td>@arbitrator.Country</td>
-                <td>@arbitrator.City</td>
-                <td>@arbitrator.AcademicDegree</td>
-                <td>@arbitrator.GeneralSpecialization</td>
-                <td>@arbitrator.SpecificSpecialization</td>
-                <td>@arbitrator.MastersThesisTitle</td>
-                <td>@arbitrator.DoctoralThesisTitle</td>
-                <td>
-                    <a href="@Url.Action("View", "Arbitrators", new { id = arbitrator.Id })">عرض</a>
-                </td>
-            </tr>
+<!-- Container to fit the screen width -->
+<div class="container">
+    <div class="table-responsive" id="tableContainer">
+        <table class="table" dir="rtl">
+            <thead>
+                <tr>
+                    <th>الاسم الأول</th>
+                    <th>الاسم الأخير</th>
+                    <th>الاستشارة</th>
+                    <th>الجنسية</th>
+                    <th>اللغة المفضلة</th>
+                    <th>الجنس</th>
+                    <th>الجهة</th>
+                    <th>الدولة</th>
+                    <th>المدينة</th>
+                    <th>الدرجة العلمية</th>
+                    <th>التخصص العام</th>
+                    <th>التخصص الدقيق</th>
+                    <th>موضوع رسالة الماجستير</th>
+                    <th>موضوع رسالة الدكتوراه</th>
+                    <th>مكان الإقامة</th>
+                    <th>مكان العمل</th>
+                    <th>تخصصات سوق العمل</th>
+                    <th>الجمعية العلمية</th>
+                    <th>شهادة مزاولة المهنة</th>
+                    <th>المؤهل</th>
+                    <th>الإجراءات</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var arbitrator in Model)
+                {
+                    <tr>
+                        <td>@arbitrator.FirstName</td>
+                        <td>@arbitrator.LastName</td>
+                        <td>@arbitrator.ConsultationType</td>
+                        <td>@arbitrator.Nationality</td>
+                        <td>@arbitrator.PreferredLanguage</td>
+                        <td>@arbitrator.Gender</td>
+                        <td>@arbitrator.Entities</td>
+                        <td>@arbitrator.Country</td>
+                        <td>@arbitrator.City</td>
+                        <td>@arbitrator.AcademicDegree</td>
+                        <td>@arbitrator.GeneralSpecialization</td>
+                        <td>@arbitrator.SpecificSpecialization1</td>
+                        <td>@arbitrator.SpecificSpecialization2</td>
+                        <td>@arbitrator.MastersThesisTitle</td>
+                        <td>@arbitrator.DoctoralThesisTitle</td>
+                        <td>@arbitrator.ResidencePlace</td>
+                        <td>@arbitrator.WorkPlace</td>
+                        <td>@arbitrator.LaborMarketSpecialization</td>
+                        <td>@arbitrator.ScientificAssociation</td>
+                        <td>@arbitrator.ProfessionalCertificate</td>
+                        <td>@arbitrator.Qualification</td>
+                        <td>
+                            <a href="@Url.Action("View", "Arbitrators", new { id = arbitrator.Id })">عرض</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Add this custom CSS to make sure scroll appears at the right -->
+<style>
+    .table-responsive {
+        overflow-x: auto;
+        direction: rtl;
+    }
+
+        .table-responsive::-webkit-scrollbar {
+            height: 8px; /* height of the horizontal scrollbar */
         }
-    </tbody>
-</table>
+
+        .table-responsive::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 10px;
+        }
+
+            .table-responsive::-webkit-scrollbar-thumb:hover {
+                background-color: #555;
+            }
+
+    /* Optional: Styling for the table */
+    table {
+        min-width: 1200px; /* Ensuring the table is wide enough to trigger scrolling */
+    }
+</style>
+
+<!-- Add this JavaScript to scroll the table to the right by default -->
+<script>
+    window.onload = function() {
+        const tableContainer = document.getElementById("tableContainer");
+        tableContainer.scrollLeft = tableContainer.scrollWidth; // Scroll to the right
+    };
+</script>

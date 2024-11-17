@@ -1,181 +1,94 @@
-﻿@model ExpertsGulfPortal.Models.AddArbitratorsViewModel
+﻿@model ExpertsGulfPortal.Models.Entities.Arbitrators
 
-<h1 dir="rtl">بحث عن محكمين</h1>
+<h1 dir="rtl">إضافة محكم جديد</h1>
 
 <form method="post" dir="rtl">
     <div class="container">
         <div class="row">
             <div class="col-6">
                 <div class="mt-3">
-                    <label class="form-label">الجنسية</label>
-                    <select class="form-control" asp-for="Nationality">
-                        <option value="">اختر الجنسية</option>
-                        <option value="المملكة العربية السعودية">المملكة العربية السعودية</option>
-                        <option value="مصر">مصر</option>
-                        <option value="الأردن">الأردن</option>
-                        <option value="الإمارات العربية المتحدة">الإمارات العربية المتحدة</option>
-                        <option value="الكويت">الكويت</option>
-                        <option value="البحرين">البحرين</option>
-                        <option value="قطر">قطر</option>
-                        <option value="عُمان">عُمان</option>
-                        <option value="فلسطين">فلسطين</option>
-                        <option value="العراق">العراق</option>
-                        <option value="سوريا">سوريا</option>
-                        <option value="لبنان">لبنان</option>
-                        <option value="تونس">تونس</option>
-                        <option value="المغرب">المغرب</option>
-                        <option value="الجزائر">الجزائر</option>
-                        <option value="ليبيا">ليبيا</option>
-                        <option value="مصر">مصر</option>
-                        <option value="السودان">السودان</option>
-                        <option value="اليمن">اليمن</option>
-                        <option value="الصومال">الصومال</option>
-                        <option value="جيبوتي">جيبوتي</option>
-                        <option value="جزر القمر">جزر القمر</option>
-                        <option value="موريشيوس">موريشيوس</option>
-                        <option value="سلطنة عمان">سلطنة عمان</option>
-                        <option value="موريتانيا">موريتانيا</option>
-                    </select>
+                    <label class="form-label">الاسم الأول</label>
+                    <input type="text" class="form-control" asp-for="FirstName" />
                 </div>
             </div>
 
+            <div class="col-6">
+                <div class="mt-3">
+                    <label class="form-label">الاسم الأخير</label>
+                    <input type="text" class="form-control" asp-for="LastName" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="row">
+                <div class="col-6">
+                    <div class="mt-3">
+                        <label class="form-label">نوع الاستشارة</label>
+                        <select class="form-control" asp-for="ConsultationType">
+                            <option value="">اختر نوع الاستشارة</option>
+                            <option value="استشارات اكاديمية">استشارات اكاديمية</option>
+                            <option value="استشارات اعمال">استشارات اعمال</option>
+                        </select>
+                    </div>
+                </div>
+
+            <div class="col-6">
+                <div class="mt-3">
+                    <label class="form-label">الجنسية</label>
+                    <input type="text" class="form-control" asp-for="Nationality" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
             <div class="col-6">
                 <div class="mt-3">
                     <label class="form-label">اللغة المفضلة</label>
-                    <select class="form-control" asp-for="PreferredLanguage">
-                        <option value="">اختر اللغة</option>
-                        <option value="العربية">العربية</option>
-                        <option value="الإنجليزية">الإنجليزية</option>
-                        <option value="الفرنسية">الفرنسية</option>
-                        <option value="الألمانية">الألمانية</option>
-                        <option value="الإسبانية">الإسبانية</option>
-                        <option value="الإيطالية">الإيطالية</option>
-                        <option value="الروسية">الروسية</option>
-                        <option value="البرتغالية">البرتغالية</option>
-                        <option value="الصينية">الصينية</option>
-                        <option value="اليابانية">اليابانية</option>
-                        <option value="الكورية">الكورية</option>
-                        <option value="الهندية">الهندية</option>
-                        <option value="الأردية">الأردية</option>
-                        <option value="الفارسية">الفارسية</option>
-                        <option value="التايلاندية">التايلاندية</option>
-                        <option value="السويدية">السويدية</option>
-                        <option value="النرويجية">النرويجية</option>
-                        <option value="الدنماركية">الدنماركية</option>
-                        <option value="الهولندية">الهولندية</option>
-                        <option value="الفيتنامية">الفيتنامية</option>
-                        <option value="الماليزية">الماليزية</option>
-                    </select>
+                    <input type="text" class="form-control" asp-for="PreferredLanguage" />
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="mt-3">
+                        <label class="form-label">النوع</label>
+                        <select class="form-control" asp-for="Gender">
+                            <option value="">النوع</option>
+                            <option value="ذكر">ذكر</option>
+                            <option value="انثى">انثى</option>
+                        </select>
                 </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-6">
-                <div class="mt-3">
-                    <label class="form-label">الجنس</label>
-                    <select class="form-control" asp-for="Gender">
-                        <option value="">اختر الجنس</option>
-                        <option value="ذكر">ذكر</option>
-                        <option value="أنثى">أنثى</option>
-                    </select>
-                </div>
-            </div>
-
             <div class="col-6">
                 <div class="mt-3">
                     <label class="form-label">الجهات</label>
-                    <select class="form-control" asp-for="Entities">
-                        <option value="">اختر الجهة</option>
-                        <option value="وزارة العدل">وزارة العدل</option>
-                        <option value="وزارة الداخلية">وزارة الداخلية</option>
-                        <option value="وزارة التعليم">وزارة التعليم</option>
-                        <option value="الهيئة العامة للاستثمار">الهيئة العامة للاستثمار</option>
-                        <option value="الغرفة التجارية">الغرفة التجارية</option>
-                        <option value="البنك المركزي">البنك المركزي</option>
-                        <option value="الجمعية الوطنية">الجمعية الوطنية</option>
-                        <option value="مجلس الشورى">مجلس الشورى</option>
-                        <option value="الهيئة العامة للسياحة">الهيئة العامة للسياحة</option>
-                        <option value="شركة الاتصالات">شركة الاتصالات</option>
-                        <option value="شركة المياه الوطنية">شركة المياه الوطنية</option>
-                        <option value="المديرية العامة للجوازات">المديرية العامة للجوازات</option>
-                        <option value="مستشفى الملك فيصل التخصصي">مستشفى الملك فيصل التخصصي</option>
-                        <option value="جامعة الملك سعود">جامعة الملك سعود</option>
-                        <option value="جمعية حماية المستهلك">جمعية حماية المستهلك</option>
-                        <option value="المؤسسة العامة للتأمينات الاجتماعية">المؤسسة العامة للتأمينات الاجتماعية</option>
-                        <option value="وزارة الصحة">وزارة الصحة</option>
-                    </select>
+                    <input type="text" class="form-control" asp-for="Entities" />
                 </div>
             </div>
-        </div>
 
-        <div class="row">
             <div class="col-6">
                 <div class="mt-3">
                     <label class="form-label">الدولة</label>
-                    <select class="form-control" asp-for="Country">
-                        <option value="">اختر الدولة</option>
-                        <option value="المملكة العربية السعودية">المملكة العربية السعودية</option>
-                    </select>
+                    <input type="text" class="form-control" asp-for="Country" />
                 </div>
             </div>
+        </div>
 
+        <div class="row">
             <div class="col-6">
                 <div class="mt-3">
                     <label class="form-label">المدينة</label>
-                    <select class="form-control" asp-for="City">
-                        <option value="">اختر المدينة</option>
-                        <option value="الرياض">الرياض</option>
-                        <option value="جدة">جدة</option>
-                        <option value="الدمام">الدمام</option>
-                        <option value="الخبر">الخبر</option>
-                        <option value="المدينة المنورة">المدينة المنورة</option>
-                        <option value="مكة المكرمة">مكة المكرمة</option>
-                        <option value="الطائف">الطائف</option>
-                        <option value="بريدة">بريدة</option>
-                        <option value="حائل">حائل</option>
-                        <option value="تبوك">تبوك</option>
-                        <option value="نجران">نجران</option>
-                        <option value="أبها">أبها</option>
-                        <option value="جازان">جازان</option>
-                        <option value="الاحساء">الأحساء</option>
-                        <option value="الخرج">الخرج</option>
-                        <option value="الجبيل">الجبيل</option>
-                        <option value="رفحاء">رفحاء</option>
-                    </select>
+                    <input type="text" class="form-control" asp-for="City" />
                 </div>
             </div>
-        </div>
 
-        <div class="row">
             <div class="col-6">
                 <div class="mt-3">
                     <label class="form-label">الدرجة العلمية الحاصل عليها</label>
-                    <select class="form-control" asp-for="AcademicDegree">
-                        <option value="">اختر الدرجة العلمية</option>
-                        <option value="بكالوريوس">بكالوريوس</option>
-                        <option value="ماجستير">ماجستير</option>
-                        <option value="دكتوراه">دكتوراه</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="col-6">
-                <div class="mt-3">
-                    <label class="form-label">التخصص العام</label>
-                    <select class="form-control" asp-for="GeneralSpecialization">
-                        <option value="">اختر التخصص العام</option>
-                        <option value="القانون">القانون</option>
-                        <option value="الهندسة">الهندسة</option>
-                        <option value="الطب">الطب</option>
-                        <option value="العلوم الإدارية">العلوم الإدارية</option>
-                        <option value="تكنولوجيا المعلومات">تكنولوجيا المعلومات</option>
-                        <option value="التعليم">التعليم</option>
-                        <option value="الفنون">الفنون</option>
-                        <option value="العلوم الاجتماعية">العلوم الاجتماعية</option>
-                        <option value="الاقتصاد">الاقتصاد</option>
-                        <option value="علوم البيئة">علوم البيئة</option>
-                    </select>
+                    <input type="text" class="form-control" asp-for="AcademicDegree" />
                 </div>
             </div>
         </div>
@@ -183,20 +96,24 @@
         <div class="row">
             <div class="col-6">
                 <div class="mt-3">
-                    <label class="form-label">التخصص الدقيق</label>
-                    <select class="form-control" asp-for="SpecificSpecialization">
-                        <option value="">اختر التخصص الدقيق</option>
-                        <option value="القانون التجاري">القانون التجاري</option>
-                        <option value="الهندسة المدنية">الهندسة المدنية</option>
-                        <option value="الجراحة">الجراحة</option>
-                        <option value="إدارة الأعمال">إدارة الأعمال</option>
-                        <option value="شبكات الحاسوب">شبكات الحاسوب</option>
-                        <option value="التعليم الابتدائي">التعليم الابتدائي</option>
-                        <option value="التصميم الجرافيكي">التصميم الجرافيكي</option>
-                        <option value="علم النفس">علم النفس</option>
-                        <option value="الاقتصاد الجزئي">الاقتصاد الجزئي</option>
-                        <option value="علوم النبات">علوم النبات</option>
-                    </select>
+                    <label class="form-label">التخصص العام</label>
+                    <input type="text" class="form-control" asp-for="GeneralSpecialization" />
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="mt-3">
+                    <label class="form-label">التخصص الدقيق 1</label>
+                    <input type="text" class="form-control" asp-for="SpecificSpecialization1" />
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="mt-3">
+                        <label class="form-label">التخصص الدقيق 2</label>
+                    <input type="text" class="form-control" asp-for="SpecificSpecialization2" />
                 </div>
             </div>
 
@@ -212,8 +129,39 @@
             <label class="form-label">موضوع رسالة الدكتوراه</label>
             <input type="text" class="form-control" asp-for="DoctoralThesisTitle" />
         </div>
+
+        <div class="mt-3">
+            <label class="form-label">مكان الإقامة</label>
+            <input type="text" class="form-control" asp-for="ResidencePlace" />
+        </div>
+
+        <div class="mt-3">
+            <label class="form-label">مكان العمل</label>
+            <input type="text" class="form-control" asp-for="WorkPlace" />
+        </div>
+
+        <div class="mt-3">
+            <label class="form-label">تخصصات سوق العمل</label>
+            <input type="text" class="form-control" asp-for="LaborMarketSpecialization" />
+        </div>
+
+        <div class="mt-3">
+            <label class="form-label">الجمعية العلمية</label>
+            <input type="text" class="form-control" asp-for="ScientificAssociation" />
+        </div>
+
+        <div class="mt-3">
+            <label class="form-label">شهادة مزاولة المهنة</label>
+            <input type="text" class="form-control" asp-for="ProfessionalCertificate" />
+        </div>
+
+        <div class="mt-3">
+            <label class="form-label">المؤهل</label>
+            <input type="text" class="form-control" asp-for="Qualification" />
+        </div>
+
         <div class="text-center mt-4">
-            <button type="submit" class="btn btn-primary btn-lg">طلب</button>
+            <button type="submit" class="btn btn-primary btn-lg">إضافة</button>
         </div>
     </div>
 </form>

@@ -1,0 +1,33 @@
+﻿@model ExpertsGulfPortal.Models.Entities.RequestArbitrators
+
+<h1 dir="rtl">تفاصيل الطلب</h1>
+
+<div class="mt-3" dir="rtl">
+    <ul class="list-group">
+        <li class="list-group-item"><strong>الاسم الأول:</strong> @Model.FirstName</li>
+        <li class="list-group-item"><strong>الاسم الأخير:</strong> @Model.LastName</li>
+        <li class="list-group-item"><strong>الاستشارة:</strong> @Model.ConsultationType</li>
+        <li class="list-group-item"><strong>الجنسية:</strong> @Model.Nationality</li>
+        <li class="list-group-item"><strong>اللغة المفضلة:</strong> @Model.PreferredLanguage</li>
+        <li class="list-group-item"><strong>الجنس:</strong> @Model.Gender</li>
+        <li class="list-group-item"><strong>الجهات:</strong> @Model.Entities</li>
+        <li class="list-group-item"><strong>الدولة:</strong> @Model.Country</li>
+        <li class="list-group-item"><strong>المدينة:</strong> @Model.City</li>
+        <li class="list-group-item"><strong>الدرجة العلمية:</strong> @Model.AcademicDegree</li>
+        <li class="list-group-item"><strong>التخصص العام:</strong> @Model.GeneralSpecialization</li>
+        <li class="list-group-item"><strong>التخصص الدقيق 1:</strong> @Model.SpecificSpecialization1</li>
+        <li class="list-group-item"><strong>التخصص الدقيق 2:</strong> @Model.SpecificSpecialization2</li>
+        <li class="list-group-item"><strong>موضوع رسالة الماجستير:</strong> @Model.MastersThesisTitle</li>
+        <li class="list-group-item"><strong>موضوع رسالة الدكتوراه:</strong> @Model.DoctoralThesisTitle</li>
+        <li class="list-group-item"><strong>مكان الإقامة:</strong> @Model.ResidencePlace</li>
+        <li class="list-group-item"><strong>مكان العمل:</strong> @Model.WorkPlace</li>
+        <li class="list-group-item"><strong>تخصصات سوق العمل:</strong> @Model.LaborMarketSpecialization</li>
+        <li class="list-group-item"><strong>الجمعية العلمية:</strong> @Model.ScientificAssociation</li>
+        <li class="list-group-item"><strong>شهادة مزاولة المهنة:</strong> @Model.ProfessionalCertificate</li>
+        <li class="list-group-item"><strong>المؤهل:</strong> @Model.Qualification</li>
+    </ul>
+</div>
+
+<div class="text-center mt-4">
+    <a asp-action="RequestList" class="btn btn-primary btn-lg">رجوع إلى القائمة</a>
+</div>

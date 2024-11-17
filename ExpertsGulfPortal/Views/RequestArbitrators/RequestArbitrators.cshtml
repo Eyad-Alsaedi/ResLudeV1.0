@@ -1,0 +1,230 @@
+﻿@model ExpertsGulfPortal.Models.RequestArbitratorsViewModel
+
+<h1 dir="rtl">طلب محكم جديد</h1>
+
+<form method="post" dir="rtl">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="mt-3">
+                    <label asp-for="FirstName" class="form-label">الاسم الأول</label>
+                    <input asp-for="FirstName" class="form-control" />
+                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mt-3">
+                    <label asp-for="LastName" class="form-label">الاسم الأخير</label>
+                    <input asp-for="LastName" class="form-control" />
+                    <span asp-validation-for="LastName" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="mt-3">
+                    <label asp-for="ConsultationType" class="form-label">نوع الاستشارة</label>
+                    <select asp-for="ConsultationType" asp-items="Model.ConsultationTypes" class="form-control">
+                        <option value="">اختر نوع الاستشارة</option>
+                    </select>
+                    <span asp-validation-for="ConsultationType" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mt-3">
+                    <label asp-for="Nationality" class="form-label">الجنسية</label>
+                    <select asp-for="Nationality" asp-items="Model.Nationalities" class="form-control">
+                        <option value="">اختر الجنسية</option>
+                    </select>
+                    <span asp-validation-for="Nationality" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="mt-3">
+                    <label asp-for="PreferredLanguage" class="form-label">اللغة المفضلة</label>
+                    <select asp-for="PreferredLanguage" asp-items="Model.Languages" class="form-control">
+                        <option value="">اختر اللغة المفضلة</option>
+                    </select>
+                    <span asp-validation-for="PreferredLanguage" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mt-3">
+                    <label asp-for="Gender" class="form-label">النوع</label>
+                    <select asp-for="Gender" asp-items="Model.Genders" class="form-control">
+                        <option value="">اختر الجنس</option>
+                    </select>
+                    <span asp-validation-for="Gender" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="mt-3">
+                    <label asp-for="Entities" class="form-label">الجهات</label>
+                    <select asp-for="Entities" asp-items="Model.EntitiesList" class="form-control">
+                        <option value="">اختر الجهة</option>
+                    </select>
+                    <span asp-validation-for="Entities" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mt-3">
+                    <label asp-for="Country" class="form-label">الدولة</label>
+                    <select asp-for="Country" asp-items="Model.Countries" class="form-control">
+                        <option value="">اختر الدولة</option>
+                    </select>
+                    <span asp-validation-for="Country" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="mt-3">
+                    <label asp-for="City" class="form-label">المدينة</label>
+                    <select asp-for="City" asp-items="Model.Cities" class="form-control">
+                        <option value="">اختر المدينة</option>
+                    </select>
+                    <span asp-validation-for="City" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mt-3">
+                    <label asp-for="AcademicDegree" class="form-label">الدرجة العلمية</label>
+                    <select asp-for="AcademicDegree" asp-items="Model.AcademicDegrees" class="form-control">
+                        <option value="">اختر الدرجة العلمية</option>
+                    </select>
+                    <span asp-validation-for="AcademicDegree" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="mt-3">
+                    <label asp-for="MastersThesisTitle" class="form-label">عنوان رسالة الماجستير</label>
+                    <input asp-for="MastersThesisTitle" class="form-control" placeholder="اكتب عنوان رسالة الماجستير" />
+                    <span asp-validation-for="MastersThesisTitle" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mt-3">
+                    <label asp-for="DoctoralThesisTitle" class="form-label">عنوان رسالة الدكتوراه</label>
+                    <input asp-for="DoctoralThesisTitle" class="form-control" placeholder="اكتب عنوان رسالة الدكتوراه" />
+                    <span asp-validation-for="DoctoralThesisTitle" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        
+            <div class="row-6">
+                <div class="mt-3">
+                    <label asp-for="GeneralSpecialization" class="form-label">التخصص العام</label>
+                    <select asp-for="GeneralSpecialization" asp-items="Model.GeneralSpecializations" class="form-control">
+                        <option value="">اختر التخصص العام</option>
+                    </select>
+                    <span asp-validation-for="GeneralSpecialization" class="text-danger"></span>
+                </div>
+            </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="mt-3">
+                    <label asp-for="SpecificSpecialization1" class="form-label">التخصص الدقيق 1</label>
+                    <select asp-for="SpecificSpecialization1" asp-items="Model.SpecificSpecializations1" class="form-control">
+                        <option value="">اختر التخصص الدقيق</option>
+                    </select>
+                    <span asp-validation-for="SpecificSpecialization1" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mt-3">
+                    <label asp-for="SpecificSpecialization2" class="form-label">التخصص الدقيق 2</label>
+                    <select asp-for="SpecificSpecialization2" asp-items="Model.SpecificSpecializations2" class="form-control">
+                        <option value="">اختر التخصص الدقيق</option>
+                    </select>
+                    <span asp-validation-for="SpecificSpecialization2" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-6">
+                <div class="mt-3">
+                    <label asp-for="ResidencePlace" class="form-label">محل الإقامة</label>
+                    <select asp-for="ResidencePlace" asp-items="Model.ResidencePlaces" class="form-control">
+                        <option value="">اختر محل الإقامة</option>
+                    </select>
+                    <span asp-validation-for="ResidencePlace" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mt-3">
+                    <label asp-for="WorkPlace" class="form-label">مكان العمل</label>
+                    <select asp-for="WorkPlace" asp-items="Model.WorkPlaces" class="form-control">
+                        <option value="">اختر مكان العمل</option>
+                    </select>
+                    <span asp-validation-for="WorkPlace" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="mt-3">
+                    <label asp-for="LaborMarketSpecialization" class="form-label">تخصصات سوق العمل</label>
+                    <select asp-for="LaborMarketSpecialization" asp-items="Model.LaborMarketSpecializations" class="form-control">
+                        <option value="">اختر تخصص سوق العمل</option>
+                    </select>
+                    <span asp-validation-for="LaborMarketSpecialization" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mt-3">
+                    <label asp-for="ScientificAssociation" class="form-label">الجمعية العلمية</label>
+                    <select asp-for="ScientificAssociation" asp-items="Model.ScientificAssociations" class="form-control">
+                        <option value="">اختر الجمعية العلمية</option>
+                    </select>
+                    <span asp-validation-for="ScientificAssociation" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="mt-3">
+                    <label asp-for="ProfessionalCertificate" class="form-label">شهادة مزاولة المهنة</label>
+                    <select asp-for="ProfessionalCertificate" asp-items="Model.ProfessionalCertificates" class="form-control">
+                        <option value="">اختر شهادة مزاولة المهنة</option>
+                    </select>
+                    <span asp-validation-for="ProfessionalCertificate" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mt-3">
+                    <label asp-for="Qualification" class="form-label">المؤهل</label>
+                    <select asp-for="Qualification" asp-items="Model.Qualifications" class="form-control">
+                        <option value="">اختر المؤهل</option>
+                    </select>
+                    <span asp-validation-for="Qualification" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <button type="submit" class="btn btn-primary btn-lg">إرسال الطلب</button>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

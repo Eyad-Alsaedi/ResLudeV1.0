@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\eyade\\source\\repos\\ResLudeV1.1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{438D2D9F-CA6A-479E-B791-641F5A9156C8}|ExpertsGulfPortal\\ExpertsGulfPortal.csproj|c:\\users\\eyade\\source\\repos\\resludev1.1\\expertsgulfportal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{438D2D9F-CA6A-479E-B791-641F5A9156C8}|ExpertsGulfPortal\\ExpertsGulfPortal.csproj|solutionrelative:expertsgulfportal\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{438D2D9F-CA6A-479E-B791-641F5A9156C8}|ExpertsGulfPortal\\ExpertsGulfPortal.csproj|c:\\users\\eyade\\source\\repos\\resludev1.1\\expertsgulfportal\\models\\requestarbitratorsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438D2D9F-CA6A-479E-B791-641F5A9156C8}|ExpertsGulfPortal\\ExpertsGulfPortal.csproj|solutionrelative:expertsgulfportal\\models\\requestarbitratorsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{438D2D9F-CA6A-479E-B791-641F5A9156C8}|ExpertsGulfPortal\\ExpertsGulfPortal.csproj|c:\\users\\eyade\\source\\repos\\resludev1.1\\expertsgulfportal\\expertsgulfportal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{438D2D9F-CA6A-479E-B791-641F5A9156C8}|ExpertsGulfPortal\\ExpertsGulfPortal.csproj|solutionrelative:expertsgulfportal\\expertsgulfportal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{438D2D9F-CA6A-479E-B791-641F5A9156C8}|ExpertsGulfPortal\\ExpertsGulfPortal.csproj|c:\\users\\eyade\\source\\repos\\resludev1.1\\expertsgulfportal\\controllers\\requestarbitratorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438D2D9F-CA6A-479E-B791-641F5A9156C8}|ExpertsGulfPortal\\ExpertsGulfPortal.csproj|solutionrelative:expertsgulfportal\\controllers\\requestarbitratorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438D2D9F-CA6A-479E-B791-641F5A9156C8}|ExpertsGulfPortal\\ExpertsGulfPortal.csproj|c:\\users\\eyade\\source\\repos\\resludev1.1\\expertsgulfportal\\models\\entities\\requestarbitrators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438D2D9F-CA6A-479E-B791-641F5A9156C8}|ExpertsGulfPortal\\ExpertsGulfPortal.csproj|solutionrelative:expertsgulfportal\\models\\entities\\requestarbitrators.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\eyade\\source\\repos\\ResLudeV1.1\\ExpertsGulfPortal\\Migrations\\20241117073308_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ExpertsGulfPortal\\Migrations\\20241117073308_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{438D2D9F-CA6A-479E-B791-641F5A9156C8}|ExpertsGulfPortal\\ExpertsGulfPortal.csproj|c:\\users\\eyade\\source\\repos\\resludev1.1\\expertsgulfportal\\controllers\\arbitratorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{438D2D9F-CA6A-479E-B791-641F5A9156C8}|ExpertsGulfPortal\\ExpertsGulfPortal.csproj|solutionrelative:expertsgulfportal\\controllers\\arbitratorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +38,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ExpertsGulfPortal",
-              "DocumentMoniker": "C:\\Users\\eyade\\Source\\Repos\\ResLudeV1.1\\ExpertsGulfPortal\\ExpertsGulfPortal.csproj",
-              "RelativeDocumentMoniker": "ExpertsGulfPortal\\ExpertsGulfPortal.csproj",
-              "ToolTip": "C:\\Users\\eyade\\Source\\Repos\\ResLudeV1.1\\ExpertsGulfPortal\\ExpertsGulfPortal.csproj",
-              "RelativeToolTip": "ExpertsGulfPortal\\ExpertsGulfPortal.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-10T11:29:50.562Z",
+              "DocumentIndex": 0,
+              "Title": "RequestArbitratorsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\eyade\\source\\repos\\ResLudeV1.1\\ExpertsGulfPortal\\Models\\RequestArbitratorsViewModel.cs",
+              "RelativeDocumentMoniker": "ExpertsGulfPortal\\Models\\RequestArbitratorsViewModel.cs",
+              "ToolTip": "C:\\Users\\eyade\\source\\repos\\ResLudeV1.1\\ExpertsGulfPortal\\Models\\RequestArbitratorsViewModel.cs",
+              "RelativeToolTip": "ExpertsGulfPortal\\Models\\RequestArbitratorsViewModel.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAA0wDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T07:34:39.895Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\eyade\\source\\repos\\ResLudeV1.1\\ExpertsGulfPortal\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "ExpertsGulfPortal\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\eyade\\source\\repos\\ResLudeV1.1\\ExpertsGulfPortal\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "ExpertsGulfPortal\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-07T09:25:23.921Z",
+              "DocumentIndex": 3,
+              "Title": "20241117073308_init.cs",
+              "DocumentMoniker": "C:\\Users\\eyade\\source\\repos\\ResLudeV1.1\\ExpertsGulfPortal\\Migrations\\20241117073308_init.cs",
+              "RelativeDocumentMoniker": "ExpertsGulfPortal\\Migrations\\20241117073308_init.cs",
+              "ToolTip": "C:\\Users\\eyade\\source\\repos\\ResLudeV1.1\\ExpertsGulfPortal\\Migrations\\20241117073308_init.cs",
+              "RelativeToolTip": "ExpertsGulfPortal\\Migrations\\20241117073308_init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T07:33:09.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RequestArbitrators.cs",
+              "DocumentMoniker": "C:\\Users\\eyade\\source\\repos\\ResLudeV1.1\\ExpertsGulfPortal\\Models\\Entities\\RequestArbitrators.cs",
+              "RelativeDocumentMoniker": "ExpertsGulfPortal\\Models\\Entities\\RequestArbitrators.cs",
+              "ToolTip": "C:\\Users\\eyade\\source\\repos\\ResLudeV1.1\\ExpertsGulfPortal\\Models\\Entities\\RequestArbitrators.cs",
+              "RelativeToolTip": "ExpertsGulfPortal\\Models\\Entities\\RequestArbitrators.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAA4wBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T07:31:31.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ArbitratorsController.cs",
+              "DocumentMoniker": "C:\\Users\\eyade\\source\\repos\\ResLudeV1.1\\ExpertsGulfPortal\\Controllers\\ArbitratorsController.cs",
+              "RelativeDocumentMoniker": "ExpertsGulfPortal\\Controllers\\ArbitratorsController.cs",
+              "ToolTip": "C:\\Users\\eyade\\source\\repos\\ResLudeV1.1\\ExpertsGulfPortal\\Controllers\\ArbitratorsController.cs",
+              "RelativeToolTip": "ExpertsGulfPortal\\Controllers\\ArbitratorsController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAswEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T07:27:25.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RequestArbitratorsController.cs",
+              "DocumentMoniker": "C:\\Users\\eyade\\source\\repos\\ResLudeV1.1\\ExpertsGulfPortal\\Controllers\\RequestArbitratorsController.cs",
+              "RelativeDocumentMoniker": "ExpertsGulfPortal\\Controllers\\RequestArbitratorsController.cs",
+              "ToolTip": "C:\\Users\\eyade\\source\\repos\\ResLudeV1.1\\ExpertsGulfPortal\\Controllers\\RequestArbitratorsController.cs",
+              "RelativeToolTip": "ExpertsGulfPortal\\Controllers\\RequestArbitratorsController.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAIwLQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T14:14:59.646Z",
               "EditorCaption": ""
             }
           ]
